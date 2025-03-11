@@ -12,7 +12,9 @@ DM me:
 * Any dependencies
 
 Or fork => [this](https://github.com/The-Graze/MonkeModInfo) <= repository and add it yourself
+
 Mod submission is likely subject to change in the future.
+
 ### Ensure that
 * your mod is built in the monke mod manager compatible format through `MakeRelease.ps1` (replace `netstandard2.0` with `netstandard2.1` in the code) or you use just a DLL in your release
 * you list the correct dependencies
