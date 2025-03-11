@@ -10,6 +10,7 @@ This uses the github api to get the latest release of all these mods, so you kno
 DM me:
 * The Github repository of the mod you want added 
 * Any dependencies
+
 Or fork => [this](https://github.com/The-Graze/MonkeModInfo) <= repository and add it yourself
 Mod submission is likely subject to change in the future.
 ### Ensure that
