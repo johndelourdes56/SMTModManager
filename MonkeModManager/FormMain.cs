@@ -711,10 +711,13 @@ namespace MonkeModManager
             if (File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"MonkeModManager/path.txt")))
             {
                 string path = File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"MonkeModManager/path.txt"));
-                textBoxDirectory.Text = path;
-                InstallDirectory = path;
-                platformDetected = true;
-                return;
+                if (path != "" && path.Contains("exe") && path.ToLower().Contains("gorillatag") && Path.GetDirectoryName(path) != null)
+                {
+                    textBoxDirectory.Text = path;
+                    InstallDirectory = path;
+                    platformDetected = true;
+                    return;
+                }
             }
             ShowErrorFindingDirectoryMessage();
         }

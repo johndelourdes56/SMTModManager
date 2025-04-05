@@ -6,6 +6,7 @@ namespace MonkeModManager
     public partial class FormSelectPlatform : Form
     {
         new readonly FormMain Parent;
+
         public FormSelectPlatform(FormMain parent)
         {
             InitializeComponent();
@@ -19,6 +20,7 @@ namespace MonkeModManager
             {
                 Parent.isSteam = false;
             }
+            Application.Run(Parent);
             this.Close();
         }
     }
